@@ -10,12 +10,17 @@ import countries from "./data/countries.json";
 import DateTimePicker from "./Component/FormsUI/DateTimePicker";
 import Checkbox from './Component/FormsUI/Checkbox'
 import Button from './Component/FormsUI/Button'
+import logo from './img/logo.svg';
 const useStyles = makeStyles((theme) => ({
   formWrapper: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(8),
 
   },
+  root: {
+    boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
+  },
+  
 }));
 
 const INITIAL_FORM_STATE = {
@@ -64,16 +69,31 @@ function App() {
         <Header />
       </Grid>
 
-      <Grid item xs={12}>
+      <Grid item xs={5}>
+      <Container maxWidth="sm"> 
+        <Grid lg={12}>
+        <img src={logo}  className="center"/>
+        </Grid>
+        </Container>
+      </Grid>
+
+      <Grid item xs={5}>
         <Container maxWidth="md">
-          <Grid item xs={12}>
-            <div className={classes.formWrapper}>
+          <Grid  xs={12}>
+            <div >
               <h2 className="Title">Personal Data</h2>
+            </div>
+          </Grid>
+          <Grid  xs={6}>
+            <div >
+              <br/>
+              <line className="Subtitle">📝&nbsp;&nbsp;Fill the below form.</line>
             </div>
           </Grid>
         </Container>
 
-        <Container maxWidth="md">
+        <Container className={classes.root} maxWidth="md">
+
           <div className={classes.formWrapper}>
             <Formik
               initialValues={{ ...INITIAL_FORM_STATE }}

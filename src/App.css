@@ -7,3 +7,21 @@
     font-size: 250%;
    
 }
+
+
+.Subtitle{
+    color: black;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 150%;
+   
+}
+  
+.center{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12em;
+        padding: 20%;
+        width: 80%;
+      }
