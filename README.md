@@ -1,6 +1,17 @@
 # Getting Started with Create React App
 Jaydipsinh Padhiyar
 
+## OUTPUT SCREENSHOT
+
+1. Home Screen
+
+![image](https://user-images.githubusercontent.com/72666169/139302530-d6d87260-6462-48f4-82e2-db1d1d92cd60.png)
+
+2. Validation
+
+![image](https://user-images.githubusercontent.com/72666169/139302700-20483df7-1fe0-410a-af2e-01806296530d.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
